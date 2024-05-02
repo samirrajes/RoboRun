@@ -8,7 +8,7 @@ The current levels are particularly easy, but now that gravity, friction, and co
 
 **[Play RoboRun!](https://samirrajes.github.io/RoboRun)**
 
-**Disclaimer:** The game is hosted on GitHub Pages, so please allow a few seconds for textures and contents to download upon selecting a level.
+**Disclaimer:** The game works particularly well (and as originally intended) when played in Chrome, with graphics accelaration enabled. 
 
 ## Game Introduction
 
