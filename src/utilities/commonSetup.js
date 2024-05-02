@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from '../../node_modules/three/build/three.module.js';
 
 // sets up a listener for toggling the camera mode
 export const setupCameraToggleListener = (toggleCameraFunction) => {
