@@ -23,12 +23,12 @@ export function createLevel2({ scene, camera, controls, renderer, keys }) {
     setupCameraToggleListener(() => { useFollowCamera = !useFollowCamera });
 
     //setup skybox
-    setupSkybox(scene, ['../../assets/skyboxes/cocoa_ft.jpg',
-                        '../../assets/skyboxes/cocoa_bk.jpg',
-                        '../../assets/skyboxes/cocoa_up.jpg',
-                        '../../assets/skyboxes/cocoa_dn.jpg',
-                        '../../assets/skyboxes/cocoa_rt.jpg',
-                        '../../assets/skyboxes/cocoa_lf.jpg']);
+    setupSkybox(scene, ['./assets/skyboxes/cocoa_ft.jpg',
+                        './assets/skyboxes/cocoa_bk.jpg',
+                        './assets/skyboxes/cocoa_up.jpg',
+                        './assets/skyboxes/cocoa_dn.jpg',
+                        './assets/skyboxes/cocoa_rt.jpg',
+                        './assets/skyboxes/cocoa_lf.jpg']);
 
     // create bounding box for playable character
     boundingBox = new Box({
@@ -48,7 +48,7 @@ export function createLevel2({ scene, camera, controls, renderer, keys }) {
     const characterloader = new GLTFLoader();
     let character;
 
-    characterloader.load('../../assets/models/robot.glb', (gltf) => {
+    characterloader.load('./assets/models/robot.glb', (gltf) => {
         character = gltf.scene;
         character.castShadow = true;
         character.traverse((node) => {
@@ -73,8 +73,8 @@ export function createLevel2({ scene, camera, controls, renderer, keys }) {
 
      // Load textures for ground and lava
     const textureLoader = new THREE.TextureLoader();
-    const groundTexture = textureLoader.load('../assets/textures/cobble_texture.png');
-    const lavaTexture = textureLoader.load('../../assets/textures/lava_texture.jpg');
+    const groundTexture = textureLoader.load('./assets/textures/cobble_texture.png');
+    const lavaTexture = textureLoader.load('./assets/textures/lava_texture.jpg');
     groundTexture.wrapS = THREE.RepeatWrapping;
     groundTexture.wrapT = THREE.RepeatWrapping;
     groundTexture.repeat.set(1, 1);

@@ -24,12 +24,12 @@ export function createLevel1({ scene, camera, controls, renderer, keys}) {
     setupCameraToggleListener(() => { useFollowCamera = !useFollowCamera });
 
     // setup skybox
-    setupSkybox(scene, ['../../assets/skyboxes/blizzard_ft.jpg',
-                        '../../assets/skyboxes/blizzard_bk.jpg',
-                        '../../assets/skyboxes/blizzard_up.jpg',
-                        '../../assets/skyboxes/blizzard_dn.jpg',
-                        '../../assets/skyboxes/blizzard_rt.jpg',
-                        '../../assets/skyboxes/blizzard_lf.jpg']);
+    setupSkybox(scene, ['./assets/skyboxes/blizzard_ft.jpg',
+                        './assets/skyboxes/blizzard_bk.jpg',
+                        './assets/skyboxes/blizzard_up.jpg',
+                        './assets/skyboxes/blizzard_dn.jpg',
+                        './assets/skyboxes/blizzard_rt.jpg',
+                        './assets/skyboxes/blizzard_lf.jpg']);
 
     // create bounding box for playable character
     boundingBox = new Box({
@@ -49,7 +49,7 @@ export function createLevel1({ scene, camera, controls, renderer, keys}) {
     const characterloader = new GLTFLoader();
     let character;
 
-    characterloader.load('../../assets/models/robot.glb', (gltf) => {
+    characterloader.load('./assets/models/robot.glb', (gltf) => {
         character = gltf.scene;
         character.castShadow = true;
         // make sure character casts shadows
@@ -75,19 +75,19 @@ export function createLevel1({ scene, camera, controls, renderer, keys}) {
     
     // load textures and set different wrapping parameters for different sizes of platforms
     const textureLoader = new THREE.TextureLoader();
-    const squareGroundTexture = textureLoader.load('../../assets/textures/ice_texture.png', undefined, undefined, (error) => {
+    const squareGroundTexture = textureLoader.load('./assets/textures/ice_texture.png', undefined, undefined, (error) => {
         console.error('Error loading texture:', error);
     });
     squareGroundTexture.wrapS = THREE.RepeatWrapping;
     squareGroundTexture.wrapT = THREE.RepeatWrapping;
     squareGroundTexture.repeat.set(2, 2);
-    const wideGroundTexture = textureLoader.load('../../assets/textures/ice_texture.png', undefined, undefined, (error) => {
+    const wideGroundTexture = textureLoader.load('./assets/textures/ice_texture.png', undefined, undefined, (error) => {
         console.error('Error loading texture:', error);
     });
     wideGroundTexture.wrapS = THREE.RepeatWrapping;
     wideGroundTexture.wrapT = THREE.RepeatWrapping;
     wideGroundTexture.repeat.set(5, 0.5);
-    const longGroundTexture = textureLoader.load('../../assets/textures/ice_texture.png', undefined, undefined, (error) => {
+    const longGroundTexture = textureLoader.load('./assets/textures/ice_texture.png', undefined, undefined, (error) => {
         console.error('Error loading texture:', error);
     });
     longGroundTexture.wrapS = THREE.RepeatWrapping;
