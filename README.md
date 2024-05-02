@@ -1,6 +1,8 @@
 # RoboRun
 
-Welcome to RoboRun, a thrilling 3D parkour game where you guide a robot through challenging environments, aiming to reach the end of each map. Navigate through icy platforms on the Ice Level and avoid lava pools on the Fire Level using intuitive controls. RoboRun is built for expansion, featuring custom-developed physics for a flexible and engaging gaming experience.
+Welcome to RoboRun, a 3D parkour game where you guide a robot through challenging environments, aiming to reach the end of each map. Navigate through icy platforms on the Ice Level and avoid lava pools on the Fire Level using intuitive controls. RoboRun is built for expansion, featuring custom-developed physics for a flexible and engaging gaming experience.
+
+The current levels are particularly easy, but now that gravity, friction, and collision detection are working I intend to introduce some harder levels!
 
 ## Play Now
 
@@ -60,6 +62,4 @@ Special thanks to the creators of these resources for making their work availabl
 
 ## Conclusion
 
-RoboRun is a testament to the versatility and capability of modern web technologies in creating engaging 3D experiences. The game not only focuses on delivering challenging gameplay but also on showcasing the potential for artistic and technical growth in web-based game development.
-
-We hope you enjoy playing RoboRun as much as we enjoyed creating it!
+I hope you enjoy playing RoboRun as much as I enjoyed creating it!
