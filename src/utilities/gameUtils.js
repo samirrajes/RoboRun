@@ -1,4 +1,4 @@
-import * as THREE from '../../node_modules/three/build/three.module.js';
+import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 
 // code is inspired and built on by Chris Course's implementation of a simple threejs collision detection game (https://github.com/chriscourses/threejs-game)
 // we added collisiond detection on all faces, more robust movement, collision detection against multiple disconnected platforms, & textures

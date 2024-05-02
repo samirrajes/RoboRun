@@ -1,5 +1,5 @@
-import * as THREE from '../../node_modules/three/build/three.module.js';
-import { OrbitControls } from '../../node_modules/three/examples/jsm/controls/OrbitControls.js';
+import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+import { OrbitControls } from 'https://unpkg.com/three/examples/jsm/controls/OrbitControls.js';
 
 import { createTitleScreen } from '../interfaces/titleScreen.js'; // import the function that creates the title/menu screen
 import { createLevel1 } from '../scenes/level1.js'; // import the function that creates level 1

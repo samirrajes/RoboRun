@@ -1,5 +1,6 @@
-import * as THREE from '../../node_modules/three/build/three.module.js';
-import { GLTFLoader } from '../../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+import { GLTFLoader } from 'https://unpkg.com/three/examples/jsm/loaders/GLTFLoader.js';
+
 
 import { setupCameraToggleListener, updateCamera, setupSkybox } from '../utilities/commonSetup.js';
 import { Box, boxCollision, updatePlayer } from '../utilities/gameUtils.js';
